@@ -1,0 +1,32 @@
+#Question3
+format(Sys.Date(), "%j")
+
+#Question4
+#POSIXlt is beneficial for calculating a statistic involving dates, i.e.
+#number of births per day over a given time period (no.births / (as.POSIXlt(date2) - as.POSIXlt(date1))
+#POSIXct would be better for a value that needs continuous updating i.e. the date of a monthly recurring payment
+
+#Question5
+CSAge <- as.POSIXlt(Sys.Date()) - as.POSIXlt("1916-04-30", format = "%Y-%m-%d", tz = "UTC")
+print(CSAge)
+
+#Question6
+month <- c(1,2,3,4,5,6)
+day <- c(23, 13, 14, 04, 07, 28)
+year <- c(1998, 1997, 2004, 2014, 1984, 1950)
+cal <- data.frame(month, day, year)
+print(cal)
+cal$Date <- as.Date( paste( cal$month , cal$day , cal$year , sep = "-" )  , format = "%m-%d-%Y" )
+str(cal) 
+
+#Question7
+dt <- as.Date("01-15-1999", format = "%m-%d-%y")
+
+#Question8
+month.dt <- format(dt, "%m")
+
+#Question9
+seq(as.Date("2005-01-01"), as.Date("2014-12-31"), by = "day")
+
+#Question10
+#stringsAsFactors
