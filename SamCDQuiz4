@@ -1,3 +1,16 @@
+#Question1
+#1. Learn a programming language to be able to extract data
+#2. Clean up your data to remove extraneous information
+#3. Use your human capabilities to look at the data as a whole
+#4. Learn how to read models to see what is important
+#5. Learn to understand the language of data and create novel material
+
+#Question2
+#My experience with R and programming has shown me that the most important part is the foundation.
+#You can have the most brilliant team working with your code, however if the code is fundamentally
+#flawed, it is worthless. Therefore, I think that a well-designed interface,
+#decently implemented is more valuable.
+
 #Question3
 format(Sys.Date(), "%j")
 
